@@ -9,9 +9,9 @@ import "./App.css";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import CreateStudent from "./components/create-student.component";
-import EditStudent from "./components/edit-student.component";
-import StudentList from "./components/student-list.component";
+import CreateStudent from "./Components/create-student.component";
+import EditStudent from "./Components/edit-student.component";
+import StudentList from "./Components/student-list.component";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Router>
         <header className="App-header">
           <Navbar bg="dark" variant="dark">
-            <Container>
+            <div>
               <Navbar.Brand>
                 <Link to={"/create-student"} className="nav-link">
                   App React MERN Stack
@@ -39,11 +39,11 @@ function App() {
                   </Link>
                 </Nav>
               </Nav>
-            </Container>
+            </div>
           </Navbar>
         </header>
 
-        <Container>
+        <div>
           <Row>
             <Col md={12}>
               <div className="wrapper">
@@ -72,7 +72,7 @@ function App() {
               </div>
             </Col>
           </Row>
-        </Container>
+        </div>
       </Router>
     </div>
   );
