@@ -19,7 +19,7 @@ function App() {
       <Router>
         <header className="App-header">
           <Navbar bg="dark" variant="dark">
-            <div>
+            <Container>
               <Navbar.Brand>
                 <Link to={"/create-student"} className="nav-link">
                   App React MERN Stack
@@ -39,11 +39,11 @@ function App() {
                   </Link>
                 </Nav>
               </Nav>
-            </div>
+            </Container>
           </Navbar>
         </header>
 
-        <div>
+        <Container>
           <Row>
             <Col md={12}>
               <div className="wrapper">
@@ -72,7 +72,7 @@ function App() {
               </div>
             </Col>
           </Row>
-        </div>
+        </Container>
       </Router>
     </div>
   );
